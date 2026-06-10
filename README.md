@@ -144,3 +144,26 @@ Before you submit your solution, you need to save your progress with git.
   * Click on + Create Submission. Connect your repository for this lab.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
 
+## Usage
+
+After cloning the repository and installing dependencies, run the tests to verify the implementation:
+
+```bash
+cd python-oop1-lab
+pipenv install    # or use your preferred environment
+pipenv shell
+pytest -x
+```
+
+The project provides two classes implemented in `lib/book.py` and `lib/coffee.py`:
+
+- `Book(title, page_count)` — `page_count` must be an integer, setting it to a non-integer prints `page_count must be an integer`. Use `turn_page()` to simulate turning a page.
+- `Coffee(size, price)` — `size` must be `Small`, `Medium`, or `Large`; setting an invalid size prints `size must be Small, Medium, or Large`. Call `tip()` to print a tip message and add $1 to `price`.
+
+## Screenshot
+
+Add a screenshot of the tests passing here. Example Markdown image placeholder:
+
+![Tests passing](docs/tests-passing.png)
+
+
